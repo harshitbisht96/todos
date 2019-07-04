@@ -1,0 +1,12 @@
+<div class='card mb-2'>
+    <div class='card-body'>
+        <div class='card-title clearfix'>
+            <h4>{{ task.title }}</h4>
+            <input type="checkbox" class='form-check-input' [(ngModel)]="task.isDone" (click)="onClick()">
+        </div>
+        <div class='card-actions'>
+            <button class='btn btn-primary' (click)="updateTask()">Update Task</button>
+            <button class='btn btn-danger' (click)="deleteTask()">Delete Task</button>
+        </div>
+    </div>
+</div>
